@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name" translatable="false">Weather</string>
-    <string name="weather">Weather</string>
+    <string name="weather_forecast">Weather forecast</string>
+    <string name="today">Today</string>
+    <string name="tomorrow">Tomorrow</string>
+    <string name="week">Week</string>
+    <string name="update">Update</string>
+    <string name="weather_degree" translatable="false">+22</string>
+    <string name="tomorrow_degree" translatable="false">+17</string>
 </resources>
