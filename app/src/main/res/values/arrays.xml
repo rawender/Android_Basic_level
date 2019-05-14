@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="cities">
+        <item>Moscow</item>
+        <item>St. Petersburg</item>
+        <item>Yekaterinburg</item>
+        <item>Novosibirsk</item>
+        <item>Samara</item>
+    </string-array>
+
+    <integer-array name="weather_imgs">
+        <item>@drawable/clear</item>
+        <item>@drawable/cloudy</item>
+        <item>@drawable/sum_rain</item>
+        <item>@drawable/rain</item>
+        <item>@drawable/clear</item>
+    </integer-array>
+    
+    <string-array name="temp">
+        <item>+22</item>
+        <item>+17</item>
+        <item>+20</item>
+        <item>+14</item>
+        <item>+25</item>
+    </string-array>
+</resources>
