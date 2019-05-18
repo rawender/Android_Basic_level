@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="cities">
+        <item>Moscow</item>
+        <item>St. Petersburg</item>
+        <item>Yekaterinburg</item>
+        <item>Novosibirsk</item>
+        <item>Samara</item>
+    </string-array>
+
+    <integer-array name="weather_imgs">
+        <item>@drawable/clear</item>
+        <item>@drawable/cloudy</item>
+        <item>@drawable/sum_rain</item>
+        <item>@drawable/rain</item>
+        <item>@drawable/clear</item>
+    </integer-array>
+    
+    <string-array name="temp">
+        <item>+22</item>
+        <item>+17</item>
+        <item>+20</item>
+        <item>+14</item>
+        <item>+25</item>
+    </string-array>
+    
+    <string-array name="air_humidity">
+        <item>41%</item>
+        <item>68%</item>
+        <item>55%</item>
+        <item>73%</item>
+        <item>39%</item>
+    </string-array>
+    
+    <string-array name="wind_speed">
+        <item>8.6 km/h</item>
+        <item>11.7 km/h</item>
+        <item>7.8 km/h</item>
+        <item>12.9 km/h</item>
+        <item>6.5 km/h</item>
+    </string-array>
+
+    <string-array name="pressure">
+        <item>1005.0 mbar</item>
+        <item>1090.0 mbar</item>
+        <item>950.0 mbar</item>
+        <item>1110.0 mbar</item>
+        <item>920.0 mbar</item>
+    </string-array>
+</resources>

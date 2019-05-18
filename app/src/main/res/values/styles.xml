@@ -8,4 +8,33 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="MyAppTheme" parent="AppTheme">
+        <item name="colorPrimary">@color/myColorPrimary</item>
+        <item name="colorPrimaryDark">@color/myColorPrimaryDark</item>
+    </style>
+    
+    <style name="medium_text">
+        <item name="android:textSize">@dimen/m_text_size</item>
+        <item name="android:textColor">@color/myColorPrimaryDark</item>
+    </style>
+    
+    <style name="x_large_text" parent="medium_text">
+        <item name="android:textSize">@dimen/xl_text_size</item>
+    </style>
+
+    <style name="title_text" parent="medium_text">
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <style name="large_title" parent="title_text">
+        <item name="android:textSize">@dimen/l_text_size</item>
+        <item name="android:textColor">@color/myColorDark</item>
+    </style>
+
+
+    <style name="checkBoxText" parent="medium_text">
+        <item name="android:textColor">@color/myColorDark</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
 </resources>
