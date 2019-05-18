@@ -71,7 +71,7 @@ public class WeatherFragment extends Fragment {
     private boolean getPressure() {
         boolean pressure = false;
         if (getArguments() != null) {
-            pressure = getArguments().getBoolean(keyForAirHumidity, false);
+            pressure = getArguments().getBoolean(keyForPressure, false);
         }
         return pressure;
     }

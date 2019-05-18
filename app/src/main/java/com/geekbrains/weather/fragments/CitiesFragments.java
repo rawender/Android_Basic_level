@@ -14,13 +14,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.CheckBox;
 import android.widget.ListView;
 import android.widget.TextView;
 
 import com.geekbrains.weather.R;
 import com.geekbrains.weather.SecondActivity;
-
-import java.util.Objects;
 
 public class CitiesFragments extends Fragment {
 
@@ -50,7 +49,6 @@ public class CitiesFragments extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         initViews(view);
-        setCheckBoxFlags();
     }
 
     @Override
@@ -120,7 +118,10 @@ public class CitiesFragments extends Fragment {
 
     private void showActivity(){
         Intent intent = new Intent(getActivity(), SecondActivity.class);
-        intent.putExtra("index", currentPosition);
+        intent.putExtra(keyForIndex, currentPosition);
+        intent.putExtra(keyForAirHumidity, airHumidityFlag);
+        intent.putExtra(keyForWindSpeed, windSpeedFlag);
+        intent.putExtra(keyForPressure, pressureFlag);
         startActivity(intent);
     }
 
@@ -141,6 +142,7 @@ public class CitiesFragments extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 currentPosition = position;
+                setCheckBoxFlags();
                 showWeather();
             }
         });
@@ -153,11 +155,13 @@ public class CitiesFragments extends Fragment {
     }
 
     private void setCheckBoxFlags() {
-        Intent bundle = Objects.requireNonNull(getActivity()).getIntent();
-        if (bundle != null) {
-            airHumidityFlag = bundle.getBooleanExtra(keyForAirHumidity, false);
-            windSpeedFlag = bundle.getBooleanExtra(keyForWindSpeed, false);
-            pressureFlag = bundle.getBooleanExtra(keyForPressure, false);
-        }
+
+        CheckBox airHumidityCheck = getActivity().findViewById(R.id.air_humidity_check);
+        CheckBox windSpeedCheck = getActivity().findViewById(R.id.wind_speed_check);
+        CheckBox pressureCheck = getActivity().findViewById(R.id.pressure_check);
+
+        airHumidityFlag = airHumidityCheck.isChecked();
+        windSpeedFlag = windSpeedCheck.isChecked();
+        pressureFlag = pressureCheck.isChecked();
     }
 }
