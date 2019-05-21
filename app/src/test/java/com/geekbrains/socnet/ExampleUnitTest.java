@@ -1,4 +1,4 @@
-package com.geekbrains.weather;
+package com.geekbrains.socnet;
 
 import org.junit.Test;
 

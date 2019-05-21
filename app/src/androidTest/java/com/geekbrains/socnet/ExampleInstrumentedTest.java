@@ -1,4 +1,4 @@
-package com.geekbrains.weather;
+package com.geekbrains.socnet;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.geekbrains.weather", appContext.getPackageName());
+        assertEquals("com.geekbrains.socnet", appContext.getPackageName());
     }
 }
