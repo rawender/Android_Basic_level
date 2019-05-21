@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">Weather</string>
+    <string name="app_name" translatable="false">Weather</string>
+    <string name="weather_forecast">Weather forecast</string>
+    <string name="empty" translatable="false">Empty</string>
+    <string name="air_humidity">Air humidity</string>
+    <string name="wind_speed">Wind speed</string>
+    <string name="pressure">Pressure</string>
+    <string name="show_weather_data">Additional option</string>
+    <string name="history">Temperature change</string>
 </resources>
