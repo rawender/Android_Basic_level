@@ -15,8 +15,6 @@ public class WeatherHistoryAdapter  extends RecyclerView.Adapter<WeatherHistoryA
         this.tempHistory = tempHistory;
     }
 
-    // Создать новый элемент пользовательского интерфейса
-    // Запускается менеджером
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
@@ -28,11 +26,9 @@ public class WeatherHistoryAdapter  extends RecyclerView.Adapter<WeatherHistoryA
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        // Вынести на экран используя ViewHolder
         holder.textView.setText(tempHistory[position]);
     }
 
-    // Вернуть размер данных, вызывается менеджером
     @Override
     public int getItemCount() {
         return tempHistory.length;
