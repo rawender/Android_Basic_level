@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        tools:ignore="DisableBaselineAlignment">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <!-- Фрагмент с выбором городов -->
+            <fragment
+                android:name="com.geekbrains.weather.fragments.CitiesFragments"
+                android:id="@+id/cities"
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                tools:ignore="NestedWeights" />
+
+            <!-- Фрагмент с выбором погодных опций -->
+            <fragment
+                android:name="com.geekbrains.weather.fragments.SettingsFragment"
+                android:id="@+id/settings"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0px" />
+
+        </LinearLayout>
+
+        <!-- Здесь будут погодные данные выбранного города -->
+        <FrameLayout
+            android:id="@+id/weather"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
